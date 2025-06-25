@@ -29,7 +29,7 @@ export interface SearchRes extends ApiRes {
 export class Search extends Service {
 
   constructor(onemap: OneMap) {
-    super(onemap, 'common/elastic/search');
+    super(onemap, 'common/elastic/search', true);
   }
 
   async search(req: SearchReq): Promise<SearchRes> {
